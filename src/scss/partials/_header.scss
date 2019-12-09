@@ -1,0 +1,10 @@
+.titulo {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 25px; 
+    padding-bottom: 1px;
+
+    p {
+        margin: 0;
+    }
+}

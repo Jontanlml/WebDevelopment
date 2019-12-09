@@ -1,0 +1,76 @@
+.slider {
+    width: 100%;
+    overflow: hidden;
+
+    ul {
+        display: flex;
+        padding: 0;
+        width: 300%;
+        animation: cambio 20s infinite alternate;
+        
+        h1{
+            /*color:#58ABA3; */
+            color: #FFFFFF;
+        }
+
+        p{
+            color: white; 
+            font-size: 20px;
+        }
+    }
+
+    li {
+       width: 100%;
+        height: 400px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+
+        &:nth-child(1) {
+            background: url(../bg-img/background1_mobil.jpg) no-repeat top center / contain;
+            
+            @include MQ(M) {
+                background: url(../bg-img/background1_tablet.jpg) no-repeat top center / contain;
+            }
+
+            @include MQ(D) {
+                background: url(../bg-img/background1.jpg) no-repeat top center / cover;
+            }
+        }
+        &:nth-child(2) {
+            background: url(../bg-img/background1_mobil.jpg) no-repeat top center / contain;
+            
+            @include MQ(M) {
+                background: url(../bg-img/background1_tablet.jpg) no-repeat top center / contain;
+            }
+
+            @include MQ(D) {
+                background: url(../bg-img/background2.jpg) no-repeat top center / cover;
+            }
+        }
+        &:nth-child(3) {
+            background: url(../bg-img/background1_mobil.jpg) no-repeat top center / contain;
+           
+            @include MQ(M) {
+                background: url(../bg-img/background1_tablet.jpg) no-repeat top center / contain;
+            }
+
+            @include MQ(D) {
+                background: url(../bg-img/background3.jpg) no-repeat top center / cover;
+            }
+        }
+    }
+    img{
+        width: 100%;
+        height: 290px;
+    }
+    
+}
+.numero{
+    text-align: center;
+    color: white;
+    height: 4%;
+    width: 4%;
+    background: #25A89C;
+}

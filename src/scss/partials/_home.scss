@@ -1,0 +1,51 @@
+.text{	
+    text-align: center;
+        
+
+    @include MQ(M){
+        display: flex;
+    }
+    div{
+        margin-bottom:20px;
+
+        @include MQ(M){
+            padding: 20px;
+            flex: 0 1 auto;
+        }
+    }
+}
+.contactanos{
+    text-align: center;
+    padding-left:15%;
+    padding-right:15%;
+    padding-bottom: 5%
+}
+.final{
+    background-color: #009788;
+    color: white;
+    text-align: justify;
+    @include MQ(M){
+        display: flex;
+        text-align: left;
+    }
+
+    div{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%; 
+        @include MQ(M){
+            margin: 40px;
+        }
+        &:first-child{
+            @include MQ(M){
+                flex:2;
+            }
+        }
+    }
+    
+
+    li{
+        list-style: none;
+        color: white;
+    }
+}
